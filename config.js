@@ -1,0 +1,15 @@
+exports.port = '9002';
+exports.dbAdress = 'localhost'//'212.42.44.254';
+exports.dbName = 'EyeguideTest';
+exports.dbPort = '27017';//'13444';
+exports.dbLogin = '_admin';
+exports.dbPass = '_Da-strateg-eyeguide';
+exports.session = '_Da-strateg-eyeguide';
+exports.emailPass = '';
+exports.domain = 'https://localhost:9003';
+exports.email = 'info@eyeguide.ru';
+exports.emailSender = 'goodsnasey@gmail.com';
+exports.SITE_KEY = '';
+exports.SECRET_KEY = '';
+exports.production = false;
+exports.port2 = '9003';

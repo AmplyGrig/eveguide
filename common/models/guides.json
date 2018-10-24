@@ -1,0 +1,67 @@
+{
+  "name": "guides",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "info": {
+      "type": "string"
+    },
+    "age": {
+      "type": "string"
+    },
+    "car": {
+      "type": "boolean"
+    },
+    "orders": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "id": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "excursions": {
+      "type": "string",
+      "id": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "surename": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "places": {
+      "type": "hasMany",
+      "model": "excursions",
+      "foreignKey": "guidesID",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
